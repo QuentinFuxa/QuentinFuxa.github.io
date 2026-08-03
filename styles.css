@@ -32,10 +32,6 @@ a {
   color: #0645ad;
 }
 
-footer {
-  margin-top: 2rem;
-}
-
 @media (max-width: 600px) {
   body {
     margin: 20px auto;

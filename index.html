@@ -1,275 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quentin Fuxa — Applied AI Engineer &amp; Researcher</title>
-    <meta
-      name="description"
-      content="Quentin Fuxa builds production AI systems, real-time speech runtimes, simultaneous translation tools, and evidence-grounded LLM agents."
-    >
-    <link rel="canonical" href="https://quentinfuxa.github.io/">
-    <meta name="theme-color" content="#1b4d5a">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Quentin Fuxa — Applied AI Engineer &amp; Researcher">
-    <meta
-      property="og:description"
-      content="Production AI, real-time speech, simultaneous translation, and evidence-grounded LLM systems."
-    >
-    <meta property="og:url" content="https://quentinfuxa.github.io/">
-    <meta name="twitter:card" content="summary">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quentin Fuxa — Applied AI Engineer</title>
+  <meta name="description" content="Quentin Fuxa — applied AI engineer, open-source developer, and independent researcher.">
+  <link rel="canonical" href="https://quentinfuxa.github.io/">
+  <meta property="og:title" content="Quentin Fuxa — Applied AI Engineer">
+  <meta property="og:description" content="Applied AI, real-time speech, simultaneous translation, and LLM research.">
+  <meta property="og:url" content="https://quentinfuxa.github.io/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Quentin Fuxa</h1>
+    <p><strong>Senior Applied AI Engineer &amp; Independent Researcher</strong></p>
+    <p>Paris, France</p>
+    <p>
+      <a href="mailto:Quentin.fuxa@gmail.com">Email</a> ·
+      <a href="https://github.com/QuentinFuxa">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/quentin-fuxa/">LinkedIn</a>
+    </p>
+    <p>
+      I build production ML and LLM systems, from real-time speech runtimes to
+      evidence-grounded agents for regulated and industrial settings.
+    </p>
+  </header>
 
-    <div class="page">
-      <header class="site-header">
-        <p class="eyebrow">Paris, France</p>
-        <h1>Quentin Fuxa</h1>
-        <p class="role">Senior Applied AI Engineer &amp; Independent Researcher</p>
-        <p class="lede">
-          I build and deploy production ML and LLM systems—from real-time speech
-          runtimes to evidence-grounded agents for regulated and industrial settings.
-          My work connects model research, reliable engineering, and hands-on delivery.
-        </p>
-        <ul class="profile-links" aria-label="Profile links">
-          <li><a href="mailto:Quentin.fuxa@gmail.com">Email</a></li>
-          <li><a href="https://github.com/QuentinFuxa">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/quentin-fuxa/">LinkedIn</a></li>
-        </ul>
-      </header>
+  <hr>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#work">Selected Work</a>
-        <a href="#research">Research</a>
-        <a href="#experience">Experience</a>
-        <a href="#interests">Interests</a>
-        <a href="#contact">Contact</a>
-      </nav>
+  <nav aria-label="Sections">
+    <a href="#projects">Projects</a> ·
+    <a href="#research">Research</a> ·
+    <a href="#experience">Experience</a> ·
+    <a href="#interests">Interests</a>
+  </nav>
 
-      <main id="main-content">
-        <section id="work" aria-labelledby="work-title">
-          <div class="section-heading">
-            <p class="section-number" aria-hidden="true">01</p>
-            <div>
-              <h2 id="work-title">Selected Work</h2>
-              <p>Open-source systems for live speech, translation, inference, and retrieval.</p>
-            </div>
-          </div>
+  <main>
+    <section id="projects">
+      <h2>Selected projects</h2>
+      <ul>
+        <li>
+          <strong><a href="https://github.com/QuentinFuxa/WhisperLiveKit">WhisperLiveKit</a></strong>
+          (10k+ stars) — ultra-low-latency, self-hosted speech-to-text with streaming
+          transcription, translation, and diarization.
+        </li>
+        <li>
+          <strong><a href="https://github.com/QuentinFuxa/NoLanguageLeftWaiting">NoLanguageLeftWaiting</a></strong>
+          — simultaneous translation for 200 languages with incremental, low-flicker output.
+        </li>
+        <li>
+          <strong><a href="https://github.com/QuentinFuxa/Alignatt4LLM">AlignAtt4LLM</a></strong>
+          — simultaneous speech translation with decoder-only LLM attention heads.
+        </li>
+        <li>
+          <strong><a href="https://github.com/QuentinFuxa/Qwen3-ASR-causal">Qwen3-ASR-causal</a></strong>
+          — causal streaming Qwen3-ASR with bounded KV state and append-only transcripts.
+        </li>
+        <li>
+          <strong><a href="https://github.com/QuentinFuxa/PolyRAG">PolyRAG</a></strong>
+          — agentic RAG for small language models with PDF and SQL search.
+        </li>
+        <li>
+          <strong><a href="https://github.com/QuentinFuxa/canary-mlx">Canary MLX</a></strong>
+          — NVIDIA Canary ASR for Apple Silicon.
+        </li>
+      </ul>
+    </section>
 
-          <div class="project-grid">
-            <article class="project project-featured">
-              <div class="project-title">
-                <h3><a href="https://github.com/QuentinFuxa/WhisperLiveKit">WhisperLiveKit</a></h3>
-                <span>10k+ stars</span>
-              </div>
-              <p>
-                An ultra-low-latency, self-hosted speech-to-text pipeline. I designed its
-                stateful streaming runtime across audio, VAD, transcription, translation,
-                diarization, and concurrent sessions.
-              </p>
-              <p class="project-meta">Creator &amp; maintainer · Python · Real-time speech</p>
-            </article>
+    <section id="research">
+      <h2>Research</h2>
 
-            <article class="project">
-              <div class="project-title">
-                <h3><a href="https://github.com/QuentinFuxa/NoLanguageLeftWaiting">NoLanguageLeftWaiting</a></h3>
-              </div>
-              <p>
-                Simultaneous translation for 200 languages, adapting NLLB-style models to
-                incremental, low-flicker output with LocalAgreement-style validation.
-              </p>
-              <p class="project-meta">Creator &amp; maintainer · Simultaneous MT</p>
-            </article>
+      <h3>AlignAtt4LLM</h3>
+      <p>
+        With Dominik Macháček. Fast AlignAtt for decoder-only LLMs at the IWSLT 2026
+        simultaneous speech translation task.
+      </p>
+      <p>
+        <a href="https://aclanthology.org/2026.iwslt-1.32/">Paper</a> ·
+        <a href="https://doi.org/10.18653/v1/2026.iwslt-1.32">DOI</a> ·
+        <a href="https://github.com/QuentinFuxa/Alignatt4LLM">Code</a>
+      </p>
 
-            <article class="project">
-              <div class="project-title">
-                <h3><a href="https://github.com/QuentinFuxa/Alignatt4LLM">AlignAtt4LLM</a></h3>
-              </div>
-              <p>
-                A simultaneous speech-translation system that recovers target-to-source
-                alignment from selected decoder-only LLM attention heads and commits only
-                evidence-supported output.
-              </p>
-              <p class="project-meta">First author · IWSLT 2026 · Python</p>
-            </article>
+      <h3>LLM bias and evidence-first evaluation</h3>
+      <p>
+        Independent research on how geopolitical asymmetries change when authority moves
+        from model memory to evidence, tools, schemas, and source text.
+      </p>
+      <p><a href="https://quentinfuxa.github.io/qwen3-bias-article/">Read the public Qwen audit</a></p>
+    </section>
 
-            <article class="project">
-              <div class="project-title">
-                <h3><a href="https://github.com/QuentinFuxa/Qwen3-ASR-causal">Qwen3-ASR-causal</a></h3>
-              </div>
-              <p>
-                A causal streaming Qwen3-ASR runtime with bounded KV state and append-only
-                transcripts. Each audio block is encoded once, using 3–4× less compute than
-                windowed inference.
-              </p>
-              <p class="project-meta">Creator · Streaming inference · PyTorch</p>
-            </article>
+    <section id="experience">
+      <h2>Experience</h2>
 
-            <article class="project">
-              <div class="project-title">
-                <h3><a href="https://github.com/QuentinFuxa/PolyRAG">PolyRAG</a></h3>
-              </div>
-              <p>
-                An agentic RAG platform built for small language models, combining robust
-                PDF and SQL search, sourced answers, contextual highlighting, and tool chaining.
-              </p>
-              <p class="project-meta">Creator · Agents · Retrieval</p>
-            </article>
+      <h3>Sia Partners</h3>
+      <p><strong>Associate Manager — GenAI Tech Lead, 2025–present</strong></p>
+      <p>Previously Senior Consultant and Consultant, 2020–2024.</p>
+      <ul>
+        <li>
+          <strong>Veolia Eau France:</strong> led the design and pilot deployment of an
+          autonomous agent investigating potential leaks across hundreds of water-network sectors.
+        </li>
+        <li>
+          <strong>ASNR / SIANCE:</strong> Product Owner and Tech Lead for an
+          inspection-preparation assistant serving 600 inspectors and 40,000+ documents.
+        </li>
+        <li>
+          <strong>Luxembourg Ministry of Digitalization:</strong> delivered a legal-corpus
+          RAG system and contributed to a Luxembourgish Whisper fine-tune.
+        </li>
+        <li>
+          <strong>French Directorate General for Food:</strong> built an NLP platform for
+          analyzing millions of public reviews.
+        </li>
+      </ul>
 
-            <article class="project">
-              <div class="project-title">
-                <h3><a href="https://github.com/QuentinFuxa/canary-mlx">Canary MLX</a></h3>
-              </div>
-              <p>
-                A lightweight implementation of NVIDIA Canary ASR for Apple Silicon, with
-                multilingual transcription, translation, timestamps, and long-audio chunking.
-              </p>
-              <p class="project-meta">Creator · Apple MLX · Speech</p>
-            </article>
-          </div>
-        </section>
+      <h3>Amazon</h3>
+      <p><strong>Applied Scientist Intern, 2020</strong> — forecasting and warehouse optimization.</p>
 
-        <section id="research" aria-labelledby="research-title">
-          <div class="section-heading">
-            <p class="section-number" aria-hidden="true">02</p>
-            <div>
-              <h2 id="research-title">Research</h2>
-              <p>Systems research grounded in deployable AI.</p>
-            </div>
-          </div>
+      <h3>SteadySun</h3>
+      <p><strong>Machine Learning Engineer Intern, 2019</strong> — computer vision for solar forecasting.</p>
+    </section>
 
-          <article class="research-item">
-            <p class="research-label">Peer-reviewed publication · IWSLT 2026</p>
-            <h3>AlignAtt4LLM: Fast AlignAtt for Decoder-Only LLMs</h3>
-            <p>
-              With Dominik Macháček. The first application of AlignAtt to a decoder-only
-              LLM for simultaneous speech translation, covering English to German, Italian,
-              and Chinese in an end-to-end synchronous cascade.
-            </p>
-            <ul class="inline-links" aria-label="AlignAtt4LLM publication links">
-              <li><a href="https://aclanthology.org/2026.iwslt-1.32/">ACL Anthology</a></li>
-              <li><a href="https://doi.org/10.18653/v1/2026.iwslt-1.32">DOI</a></li>
-              <li><a href="https://github.com/QuentinFuxa/Alignatt4LLM">Code</a></li>
-            </ul>
-          </article>
+    <section id="interests">
+      <h2>Interests</h2>
+      <ul>
+        <li>Streaming speech and ASR</li>
+        <li>Simultaneous translation</li>
+        <li>Efficient inference</li>
+        <li>LLM agents and evidence-grounded systems</li>
+        <li>Model evaluation and AI bias auditing</li>
+      </ul>
+      <p>
+        MSc / Diplôme d’Ingénieur in Computer and Data Science,
+        <strong>CentraleSupélec</strong>.
+      </p>
+    </section>
+  </main>
 
-          <article class="research-item">
-            <p class="research-label">Independent research · AI evaluation</p>
-            <h3>Evidence-first audits of geopolitical asymmetry in LLMs</h3>
-            <p>
-              I study how model behavior changes as task authority moves from model memory
-              to supplied evidence, tools, schemas, and source text. This work develops
-              mirrored tests and explicit failure labels for real deployment decisions.
-            </p>
-            <ul class="inline-links" aria-label="Qwen audit links">
-              <li><a href="https://quentinfuxa.github.io/qwen3-bias-article/">Read the public article</a></li>
-            </ul>
-          </article>
-        </section>
+  <hr>
 
-        <section id="experience" aria-labelledby="experience-title">
-          <div class="section-heading">
-            <p class="section-number" aria-hidden="true">03</p>
-            <div>
-              <h2 id="experience-title">Experience</h2>
-              <p>Six years building AI with users, operators, and domain experts.</p>
-            </div>
-          </div>
-
-          <div class="timeline">
-            <article class="experience-item">
-              <div class="experience-when">
-                <p>2020—present</p>
-                <p>Paris</p>
-              </div>
-              <div>
-                <h3>Sia Partners</h3>
-                <p class="experience-role">
-                  Associate Manager — GenAI Tech Lead<br>
-                  <span>Previously Senior Consultant and Consultant</span>
-                </p>
-                <ul>
-                  <li>
-                    <strong>Veolia Eau France:</strong> led the design and pilot deployment
-                    of an autonomous agent that investigates potential leaks across hundreds
-                    of water-network sectors and produces evidence-backed recommendations.
-                  </li>
-                  <li>
-                    <strong>ASNR · SIANCE:</strong> Product Owner and Tech Lead for an
-                    inspection-preparation assistant serving 600 inspectors over more than
-                    40,000 source documents.
-                  </li>
-                  <li>
-                    <strong>Luxembourg Ministry of Digitalization:</strong> delivered a RAG
-                    system over legal corpora and contributed to a Luxembourgish Whisper
-                    fine-tune.
-                  </li>
-                  <li>
-                    <strong>French Directorate General for Food:</strong> engineered an NLP
-                    platform that analyzed millions of public reviews using sentiment, topic,
-                    and explainability models.
-                  </li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="experience-item compact">
-              <div class="experience-when"><p>2020</p><p>Luxembourg</p></div>
-              <div>
-                <h3>Amazon</h3>
-                <p class="experience-role">Applied Scientist Intern</p>
-                <p>Built an inbound warehouse forecasting and quadratic-optimization pipeline.</p>
-              </div>
-            </article>
-
-            <article class="experience-item compact">
-              <div class="experience-when"><p>2019</p><p>France</p></div>
-              <div>
-                <h3>SteadySun</h3>
-                <p class="experience-role">Machine Learning Engineer Intern</p>
-                <p>Developed computer-vision methods for solar-irradiation estimation from cloud cover.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="interests" aria-labelledby="interests-title">
-          <div class="section-heading">
-            <p class="section-number" aria-hidden="true">04</p>
-            <div>
-              <h2 id="interests-title">Interests</h2>
-              <p>The questions I keep returning to.</p>
-            </div>
-          </div>
-
-          <ul class="interest-list">
-            <li>Streaming speech &amp; ASR</li>
-            <li>Simultaneous translation</li>
-            <li>Efficient inference</li>
-            <li>LLM agents</li>
-            <li>Evidence-grounded systems</li>
-            <li>Model evaluation</li>
-            <li>AI bias auditing</li>
-          </ul>
-          <p class="education">
-            MSc / Diplôme d’Ingénieur in Computer and Data Science,
-            <strong>CentraleSupélec</strong>.
-          </p>
-        </section>
-      </main>
-
-      <footer id="contact" class="site-footer">
-        <div>
-          <p class="eyebrow">Get in touch</p>
-          <h2>Interested in building reliable AI?</h2>
-        </div>
-        <div class="footer-contact">
-          <a href="mailto:Quentin.fuxa@gmail.com">Quentin.fuxa@gmail.com</a>
-          <p>Paris, France</p>
-        </div>
-      </footer>
-    </div>
-  </body>
+  <footer>
+    <p><a href="mailto:Quentin.fuxa@gmail.com">Quentin.fuxa@gmail.com</a> · Paris, France</p>
+  </footer>
+</body>
 </html>
